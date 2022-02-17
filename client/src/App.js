@@ -43,3 +43,29 @@ function App() {
 }
 
 export default App;
+
+
+// import { getAllQuestions } from "./services/QuestionsService.js";
+
+// As soon as the component renders we need to make an api to request to get those questions, 
+//if we get those questions we need to store those questions in state
+
+// function App() {
+//   const [questions, setQuestions] = useState([]);
+
+//use effect takes two argumants a function and an array 
+//(its always an array but the array can be empty and when empty it means once its run it will never run again) that needs to happen
+
+//   useEffect(() => {
+//     async function getQuestions() {
+//       if (!questions) {
+//         const response = await getAllQuestions();
+//         setQuestions(response)
+//       }
+//     }
+
+//     getQuestions();
+//   }, [questions]);
+
+// }
+
