@@ -1,5 +1,5 @@
 // You can create all the fetches to your own APIs and externals APIs here
-// This example fetch is specifically for our Profile API and is why the file is called profileService.js
+// This example fetch is specifically for our Profile API and is why the file is called questionsService.js
 
 // import axios from "axios";
 

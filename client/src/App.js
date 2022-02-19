@@ -53,8 +53,8 @@ export default App;
 // function App() {
 //   const [questions, setQuestions] = useState([]);
 
-//use effect takes two argumants a function and an array 
-//(its always an array but the array can be empty and when empty it means once its run it will never run again) that needs to happen
+// use effect takes two argumants a function and an array 
+// (its always an array but the array can be empty and when empty it means once its run it will never run again) that needs to happen
 
 //   useEffect(() => {
 //     async function getQuestions() {
