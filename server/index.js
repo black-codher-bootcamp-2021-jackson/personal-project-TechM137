@@ -25,20 +25,20 @@ app.use(bodyParser.json());
 require("./routes/profilesRoutes")(app); 
 
 // app.post(`/api/profile`, async (req, res) => {
-//   const profile = await Profile.create(req.body);
+//   const questions = await Questions.create(req.body);
 
 //   return res.status(201).send({
 //     error: false,
-//     profile,
+//     answers,
 //   });
 // });
 
-// app.post('/profilesService', (req, res) => {
-//   const { firstName, lastName, location } = req.params; 
+// app.post('/questionsService', (req, res) => {
+//   const { answers } = req.params; 
 //   res.header("Content-Type", "application/json");
 //   res.status(202);
 
-//   res.send(profileServices);
+//   res.send(questionsServices);
 
 // })
 

@@ -8,9 +8,10 @@
 //     return res.status(200).send(questions);
 //   });
 // }
-// POST request in the component where it renders (client - riskassess.js) to output each question and output the answers for each q, 
 
-//   app.post(`/api/profile`, async (req, res) => {
+// Fetch request in the component where it renders (client - riskassess.js) to output each question and output the answers for each q, 
+
+//   app.fetch(`/api/profile`, async (req, res) => {
 //     const profile = await Profile.create(req.body);
 
 //     return res.status(201).send({
