@@ -23,15 +23,15 @@ function App() {
 
   const renderProfile = (user) => {
     return (
-      <div> 
-      <header>Welcome To Tech Health</header>
-      <h1 key={user._id}>
+      <div className="container"> 
+      <h1>Welcome To Tech Health</h1>
+      <h2 key={user._id}>
       <p>
         {`${user.first_name} 
         ${user.last_name}`}
       </p>
       <p>{user.location}</p>
-    </h1>   
+    </h2>   
     </div>
     );
   };
@@ -50,28 +50,6 @@ function App() {
 }
 
 export default App;
-
-// const renderQuestions = (user) => {
-//   return (
-// <p> Q1 What is your age demographic? </p>
-
-// <div>
-// <input type="radio" id="question" name="drone" value="huey" */}
-//         checked>
-// <label for="huey">Huey</label>
-// </div>
-
-// <div>
-// <input type="radio" id="dewey" name="drone" value="dewey">
-// <label for="dewey">Dewey</label>
-// </div>
-
-// <div>
-// <input type="radio" id="louie" name="drone" value="louie">
-// <label for="louie">Louie</label>
-// </div> */}
-
-
 
 // import { getAllQuestions } from "./services/QuestionsService.js";
 
@@ -98,3 +76,25 @@ export default App;
 // }
 
 // export default App;
+
+
+// Below is in the risk assessment page in pages folder
+// const renderQuestions = (user) => {
+//   return (
+// <p> Q1 Please select your age group </p>
+
+// <div>
+// <input type="radio" id="questions" onCheck{handleChange} name="" value="" */}
+//         checked>
+// <label for "[]""></label>
+// </div>
+
+// <div>
+// <input type="radio" id="questions" onCheck{handleChange} name="" value="">
+// <label for=""></label>
+// </div>
+
+// <div>
+// <input type="radio" id="questions" onCheck{handleChange} name="" value="">
+// <label for=""></label>
+// </div> */}

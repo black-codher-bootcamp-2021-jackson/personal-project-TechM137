@@ -31,22 +31,60 @@
 
 // export default App;
 
+// function answers() => {
+//  const [input, setInput] = useState([])
+// }
+
+// function handleChange(event) {
+//  const {name, value} = event.target;
+
+//  setInput(prevInput => {
+//      return {
+//          prevInput, 
+//          [name]:value
+//  }
+//  })
+//  
+//  function handleClick(event) {
+//         event.preventDefault();
+//  console.log(input);
+// }
+// }
+
 // const renderQuestions = (user) => {
 //   return (
-// <p> Q1 Please select your age group </p>
+// <fieldset>
+// <legend> Q1 Please select your age group </legend>
+// <form>
 
-// <div>
-// <input type="radio" id="questions" onCheck{handleCheck} name="" value="" */}
-//         checked>
-// <label for "[]""></label>
-// </div>
+//  <div>
+//      <input type="radio" id="questions" onChange{handleChange} name="" value=[] */}>
+//      <label for "questions">[]</label>
+//  </div>
 
-// <div>
-// <input type="radio" id="questions" onCheck{handleCheck} name="" value="">
-// <label for=""></label>
-// </div>
+//  <div>
+//      <input type="radio" id="questions" onChange{handleChange} name="" value=[]>
+//      <label for="questions">[]</label>
+//  </div>
 
-// <div>
-// <input type="radio" id="questions" onCheck{handleCheck} name="" value="">
-// <label for=""></label>
-// </div> */}
+//  <div>
+//      <input type="radio" id="questions" onChange{handleChange} name="" value=[]>
+//      <label for="questions">[]</label>
+//  </div> 
+
+//  <div>
+//      <input type="radio" id="questions" onChange{handleChange} name="" value=[]>
+//      <label for="questions">[]</label>
+//  </div> 
+
+//  <div>
+//      <input type="radio" id="questions" onChange{handleChange} name="" value=[]>
+//      <label for="questions">[]</label>
+//  </div>
+
+{/* <div>
+        <button type="submit">Submit</button>
+    </div> */}
+
+// </form>
+// </fieldset>
