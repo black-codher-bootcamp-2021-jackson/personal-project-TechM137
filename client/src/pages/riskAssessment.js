@@ -33,20 +33,20 @@
 
 // const renderQuestions = (user) => {
 //   return (
-// <p> Q1 What is your age demographic? </p>
+// <p> Q1 Please select your age group </p>
 
 // <div>
-// <input type="radio" id="question" name="drone" value="huey" */}
+// <input type="radio" id="questions" onCheck{handleCheck} name="" value="" */}
 //         checked>
-// <label for="huey">Huey</label>
+// <label for "[]""></label>
 // </div>
 
 // <div>
-// <input type="radio" id="dewey" name="drone" value="dewey">
-// <label for="dewey">Dewey</label>
+// <input type="radio" id="questions" onCheck{handleCheck} name="" value="">
+// <label for=""></label>
 // </div>
 
 // <div>
-// <input type="radio" id="louie" name="drone" value="louie">
-// <label for="louie">Louie</label>
+// <input type="radio" id="questions" onCheck{handleCheck} name="" value="">
+// <label for=""></label>
 // </div> */}
