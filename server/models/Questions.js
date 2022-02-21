@@ -1,9 +1,9 @@
-// const { Mongoose } = require("mongoose");
-// const { Schema } = mongoose;
+const { Mongoose } = require("mongoose");
+const { Schema } = mongoose;
 
-// const questionsSchema = new Schema({
-//     question: String,
-//     answer: Array, 
-// });
+const questionsSchema = new Schema({
+    question: String,
+    answer: Array, 
+});
 
-// Mongoose.model("Questions", questionsSchema);
+Mongoose.model("Questions", questionsSchema);

@@ -1,13 +1,14 @@
 // You can create all the fetches to your own APIs and externals APIs here
 // This example axios is specifically for our Profile API and is why the file is called questionsService.js
 
-// import axios from "axios";
+import axios from "axios";
 
-// const getAllQuestions = async () => {
-//   const response = await axios.get(`/api/questions`);
+const getAllQuestions = async () => {
+  const response = await axios.get(`/api/questions`);
 
-//   return response.data || [];
-// };
+  return response.data || [];
+};
+export { getAllQuestions};
 
 // or
 
@@ -20,7 +21,7 @@
 //  alert('error retrieving demo questions');
 
 // // All of the endpoints in this file can be exported below
-// export { getAllQuestions};
+
 
 
 // async function getUser(){
