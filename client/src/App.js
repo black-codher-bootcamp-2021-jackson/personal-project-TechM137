@@ -16,9 +16,7 @@ function App() {
         exact
         path="/"
         element={
-                
-            <Homepage /> 
-        
+          <Homepage /> 
         }
       />
 
@@ -51,7 +49,7 @@ export default App;
 
 
 
-{/* // SERVICES THAT CALL OUR API ENDPOINTS
+/* // SERVICES THAT CALL OUR API ENDPOINTS
 // import { getAllQuestions } from "./services/questionsService";
 
 // As soon as the component renders we need to make an api to request to get those questions, 
@@ -65,10 +63,10 @@ if we get those questions we need to store those questions in state
   // useEffect(() => { 
 
    
-     async function getQuestions() {  */}
+     async function getQuestions() {  */
 
 
-  {/* //    if (!questions) {
+  /* //    if (!questions) {
   //       const response = await getAllQuestions();
   //       setQuestions(response)
   //     }
@@ -77,7 +75,7 @@ if we get those questions we need to store those questions in state
   //   getQuestions();
   // }, [questions]);
 
-// } */}
+// } */
 
 
 
@@ -85,7 +83,7 @@ if we get those questions we need to store those questions in state
 
 
 
-{/* 
+/* 
 // function App() {
 //   const [profiles, setProfiles] = useState(null);
 
@@ -130,4 +128,4 @@ if we get those questions we need to store those questions in state
 //   );
 // }
 
-// export default App; */}
+// export default App; */

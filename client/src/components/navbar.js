@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
+// import "./navBar.css"
 
 
  function NavBar() {
@@ -13,6 +14,6 @@ import {Link} from "react-router-dom";
          }
 
 
-      {/* <button onClick={() => props.button> Risk Assessment </button> */}
+      /* <button onClick={() => props.button> Risk Assessment </button> */
 
       export default NavBar;
