@@ -1,34 +1,35 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom/cjs/react-router-dom.min";
-import "./components/navbar"
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import NavBar from "./components/navbar";
+import Homepage from "./pages/homepage.js";
+import About from "./pages/about.js"
 
 
 
 function App() {
   return (
     <BrowserRouter>
+    <NavBar />
+      <Routes>
       <Route
         exact
         path="/"
-        render={() => (
-          <>
-            <homepage /> 
-            {/* <navBar/> */}
-          </>
-        )}
+        element={
+                
+            <Homepage /> 
+        
+        }
       />
 
-      {/* <Route
+
+      <Route
         exact
-        path="/about"
-        render={() => (
-          <>
-            <Header />
+        path="/About"
+        element={
             <About />
-          </>
-        )}
-      /> */}
+        }
+      />
 
       {/* <Route
         exact
@@ -40,6 +41,7 @@ function App() {
           </>
         )}
       /> */}
+      </Routes>
     </BrowserRouter>
   );
 }

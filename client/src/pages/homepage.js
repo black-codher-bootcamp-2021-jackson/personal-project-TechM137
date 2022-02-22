@@ -1,8 +1,6 @@
     import React from "react";
-    import { Link,BrowserRouter } from "react-router-dom"; 
-    import "./App.css";
     
-    function homepage() {
+    function Homepage() {
         return (
     <div>
     <h1>Welcome To Tech Health</h1>
@@ -13,4 +11,4 @@
     }
 
 
-export default homepage;
+export default Homepage;

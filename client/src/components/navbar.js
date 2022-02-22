@@ -1,13 +1,13 @@
 import React from "react";
-import { Link,BrowserRouter } from "react-router-dom"; 
-import "./App.css";
+import {Link} from "react-router-dom";
 
- function navBar() {
+
+ function NavBar() {
      return (
      <nav className="navBar">
                  <Link className= "link" to="/"> Homepage </Link>
-                 <Link className= "link"to="/"> About </Link>
-                 <Link className= "link" to="/"> Resources </Link>
+                 <Link className= "link"to="/About"> About </Link>
+                 <Link className= "link" to="/Resources"> Resources </Link>
              </nav>
             )    
          }
@@ -15,4 +15,4 @@ import "./App.css";
 
       {/* <button onClick={() => props.button> Risk Assessment </button> */}
 
-      export default navBar;
+      export default NavBar;

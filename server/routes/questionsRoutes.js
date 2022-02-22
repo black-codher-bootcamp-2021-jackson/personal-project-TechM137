@@ -8,6 +8,7 @@ const questionsRoutes = (app) => {
     return res.status(200).send(questions);
   });
 }
+module.exports = questionsRoutes;
 
 // Fetch request in the component where it renders (client - riskassess.js) to output each question and output the answers for each q, 
 

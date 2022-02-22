@@ -1,9 +1,9 @@
-const { Mongoose } = require("mongoose");
-const { Schema } = mongoose;
+const Mongoose = require("mongoose");
+const { Schema } = Mongoose;
 
 const questionsSchema = new Schema({
     question: String,
     answer: Array, 
 });
 
-Mongoose.model("Questions", questionsSchema);
+Mongoose.model("questions", questionsSchema);
