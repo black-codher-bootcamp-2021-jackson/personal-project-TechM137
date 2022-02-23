@@ -5,6 +5,7 @@ import NavBar from "./components/navbar";
 import Homepage from "./pages/homepage.js";
 import About from "./pages/about.js"
 import RiskAssessment from "./pages/riskAssessment";
+// import Resources from "./pages/resources";
 
 
 
@@ -21,7 +22,6 @@ function App() {
         }
       />
 
-
       <Route
         exact
         path="/About"
@@ -30,17 +30,6 @@ function App() {
         }
       />
 
-      {/* <Route
-        exact
-        path="/basket"
-        render={() => (
-          <>
-            <Header />
-            <Basket />
-          </>
-        )}
-      /> */}
-
    <Route
         exact
         path="/RiskAssessment"
@@ -48,6 +37,15 @@ function App() {
             <RiskAssessment />
         }
       />
+
+{/*       
+   <Route
+        exact
+        path="/Resources"
+        element={
+            <Resources />
+        }
+      /> */}
 
       </Routes>
     </BrowserRouter>

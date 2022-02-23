@@ -1,12 +1,14 @@
 const mongoose = require("mongoose");
-const Questions = mongoose.model("../models/Questions");
+const Questions = mongoose.model("questions");
 
 const questionsRoutes = (app) => {
   app.get(`/api/questions`, async (req, res) => {
     const questions = await Questions.find();
-console.log("insidequestions")
-console.log(questions)
-    return res.status(200).send(questions);
+// console.log("insidequestions")
+// console.log(questions)
+    return res.status(200).json({
+      questions: questions
+    });
   });
 }
 module.exports = questionsRoutes;

@@ -85,7 +85,14 @@ input {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: black;
+  color: rgb(89, 89, 243);
+}
+
+.App {
+  box-sizing: border-box;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
 }
 
 .App-link {
@@ -102,6 +109,12 @@ h1 {
   text-align: center;
   color: blueviolet;
   padding: 5px;
+}
+
+.btn {
+  position: centre;
+  padding: 20px;
+  color: green
 }
 
 /* .Homepagelink {

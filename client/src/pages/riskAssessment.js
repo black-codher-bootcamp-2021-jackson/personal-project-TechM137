@@ -32,11 +32,12 @@ const RenderQuestions = (user) => {
         async function getQuestions() {
             if (questions.length === 0) {
                 const response = await getAllQuestions();
-                setQuestions(response)
+                console.log(response)
+                setQuestions(response.questions);
         }
     }
         getQuestions();
-    }, [questions]); 
+    }, []); 
 
     return (
         <form> 

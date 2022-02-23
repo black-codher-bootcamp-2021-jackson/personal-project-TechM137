@@ -4,6 +4,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const { param } = require("express/lib/request");
+const path = require("path");
 
 // IMPORT YOUR SCHEMAS HERE
 require("./models/Questions"); //This is just an example. Don't forget to delete this

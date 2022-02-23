@@ -4,3 +4,19 @@
     color: blueviolet;
     padding: 5px;
   }
+
+h1 {
+  position: center;
+  text-align: center;
+}
+
+h3 {
+  position: center;
+  text-align: center;
+  color: blueviolet;
+  padding: 5px;
+}
+
+.Tagline {
+  
+}
