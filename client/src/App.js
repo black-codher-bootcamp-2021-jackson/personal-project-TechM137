@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Homepage from "./pages/homepage.js";
 import About from "./pages/about.js"
+import RiskAssessment from "./pages/riskAssessment";
 
 
 
@@ -39,6 +40,15 @@ function App() {
           </>
         )}
       /> */}
+
+   <Route
+        exact
+        path="/RiskAssessment"
+        element={
+            <RiskAssessment />
+        }
+      />
+
       </Routes>
     </BrowserRouter>
   );

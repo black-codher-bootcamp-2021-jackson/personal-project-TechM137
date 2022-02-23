@@ -8,7 +8,7 @@ const getAllQuestions = async () => {
 
   return response.data || [];
 };
-export { getAllQuestions};
+export { getAllQuestions };
 
 // or
 

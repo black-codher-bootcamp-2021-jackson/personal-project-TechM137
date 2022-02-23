@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./riskAssessment.css";
+import "../style/riskAssessment.css";
 
 // useState is used to pass props through components, I need a useState for the questions and answers to appear on 
 // the riskAssessment page(2)
@@ -24,18 +24,17 @@ import "./riskAssessment.css";
 //  console.log(input);
 // }
 // }
-import { getAllQuestions } from "./services/questionsService";
+import { getAllQuestions } from "../services/questionsService";
 
-const renderQuestions = (user) => {
+const RenderQuestions = (user) => {
     const [questions, setQuestions] = useState([]);
     useEffect(() => {
         async function getQuestions() {
-            if (!questions) {
+            if (questions.length === 0) {
                 const response = await getAllQuestions();
                 setQuestions(response)
-            }
         }
-  
+    }
         getQuestions();
     }, [questions]); 
 
@@ -43,7 +42,8 @@ const renderQuestions = (user) => {
         <form> 
             <fieldset>
             <legend> Tech Health Risk Assessment </legend>
-                {
+                { console.log("here")}
+                { 
                     questions.map((question) => {
                     return (
                         <div>
@@ -67,7 +67,7 @@ const renderQuestions = (user) => {
 }
 
 
-export default renderQuestions;
+export default RenderQuestions;
 
 
 
@@ -101,9 +101,9 @@ export default renderQuestions;
 //      <label for="questions">[]</label>
 //  </div>
 
-{/* <div>
+/* <div>
         <button type="submit">Submit</button>
-    </div> */}
+    </div> */
 
 // </form>
 // </fieldset>
