@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../style/riskAssessment.css";
+import "../style/questions.css";
 
 // useState is used to pass props through components, I need a useState for the questions and answers to appear on 
 // the riskAssessment page(2)
@@ -43,7 +43,7 @@ const RenderQuestions = (user) => {
         <form> 
             <fieldset>
             <legend> Tech Health Risk Assessment </legend>
-                { console.log("here")}
+                {/* { console.log("here")} */}
                 { 
                     questions.map((question) => {
                     return (

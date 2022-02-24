@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar";
 import Homepage from "./pages/homepage.js";
 import About from "./pages/about.js"
-import RiskAssessment from "./pages/riskAssessment";
-// import Resources from "./pages/resources";
+import Questions from "./pages/questions";
+import Resources from "./pages/resources";
 
 
 
@@ -32,20 +32,23 @@ function App() {
 
    <Route
         exact
-        path="/RiskAssessment"
+        path="/Questions"
         element={
-            <RiskAssessment />
+            <Questions />
         }
       />
 
-{/*       
+{       
    <Route
         exact
         path="/Resources"
         element={
             <Resources />
         }
-      /> */}
+   /> 
+    
+}
+
 
       </Routes>
     </BrowserRouter>

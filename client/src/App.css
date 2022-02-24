@@ -1,57 +1,9 @@
- /* .App {
+ .App {
   box-sizing: border-box;
   margin: 10px;
   padding: 5px;
   text-align: center;
 }
-
-.h1 {
-  position: center;
-  text-align: center;
-}
-
-.btn {
-  position: centre;
-  padding: 20px;
-  color: green
-}
-
-.navBar {
-  position: center;
-  text-align: center;
-  color: blueviolet;
-  padding: 5px;
-}
-
-.homelink {
-}
-
-.aboutlink {
-
-}
-
-.basketlink {
-
-}
-
-
-.App {
-  text-align: center;
-}
-
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-}
-
-.App-link {
-  color: #ca61fb;
-} */
-
 
 label {
     font: 1rem 'Fira Sans', sans-serif;
@@ -117,6 +69,13 @@ h1 {
   color: green
 }
 
+div.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 3px solid green;
+}
 /* .Homepagelink {
 }
 

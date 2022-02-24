@@ -1,0 +1,21 @@
+div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  }
+
+
+.link {
+    color: black; 
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+ }
+ 
+ .link:hover {
+     text-decoration: none; 
+     color: green;
+ }

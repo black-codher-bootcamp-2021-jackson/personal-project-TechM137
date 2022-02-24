@@ -8,7 +8,7 @@ const path = require("path");
 
 // IMPORT YOUR SCHEMAS HERE
 require("./models/Questions"); //This is just an example. Don't forget to delete this
-const profileRoutes = require("./routes/questionsRoutes");
+
 
 const app = express();
 
