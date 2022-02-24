@@ -4,8 +4,9 @@
 import axios from "axios";
 
 const getAllQuestions = async () => {
+  // console.log("hello")
   const response = await axios.get(`/api/questions`);
-
+// console.log(response)
   return response.data || [];
 };
 export { getAllQuestions };

@@ -2,14 +2,22 @@ const mongoose = require("mongoose");
 const Questions = mongoose.model("questions");
 
 const questionsRoutes = (app) => {
+//   app.get(`/api/questions`, async (req, res) => {
+//     console.log("hey")
+//     const questions = await Questions.find();
+// // console.log("insidequestions")
+// console.log(questions)
+//     return res.status(200).json({
+//       questions: questions
+//     });
+//   });
+
   app.get(`/api/questions`, async (req, res) => {
     const questions = await Questions.find();
-// console.log("insidequestions")
-// console.log(questions)
-    return res.status(200).json({
-      questions: questions
-    });
+    console.log(questions)
+    return res.status(200).send(questions);
   });
+
 }
 module.exports = questionsRoutes;
 

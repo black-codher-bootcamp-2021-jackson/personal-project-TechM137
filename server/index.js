@@ -15,8 +15,11 @@ const app = express();
 // This is where your API is making its initial connection to the database
 mongoose.Promise = global.Promise;
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
-  useNewUrlParser: true,
-});
+  useNewUrlParser: true, useUnifiedTopology: true
+})
+
+.then((result) => console.log("connected to db"))
+  .catch((err) => console.log(err));
 
 app.use(bodyParser.json());
 
