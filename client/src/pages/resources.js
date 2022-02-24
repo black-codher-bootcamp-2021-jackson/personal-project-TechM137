@@ -4,14 +4,24 @@ import "../style/resources.css";
 
  function Resources() {
         return (
-        <div>
-            <h1> Resources </h1>
-                <li>
-                  <ol><Link to="/https://www.thecyberhelpline.com/" id="CyberHelpline"> TheCyberHelpline </Link></ol>
-                  <ol><Link to="/" id="DataBreaches"> Data Breaches </Link></ol>
-                  <ol><Link to="/" id="PrivacyBreaches"> Privacy Breaches </Link></ol>
-            </li>
-         </div>
+            <body>
+                <div class="header">
+                    <h1> Resources </h1>
+                        <div class="dropdown">
+                            <button class="link">Topics</button>
+                            <div class="dropdown-menu">
+                                Dropdown Content
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                    <ul>
+                        <li><a href= "https://www.thecyberhelpline.com/" id="CyberHelpline"> TheCyberHelpline </a></li>
+                        <li><a href="/" id="DataBreaches"> Data Breaches </a></li>
+                        <li><a href ="/" id="PrivacyBreaches"> Privacy Breaches </a></li>
+                    </ul>
+                </div>
+           </body>
         )
     }
 
