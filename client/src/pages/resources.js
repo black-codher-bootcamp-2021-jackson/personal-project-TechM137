@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
 import "../style/resources.css";
 
  function Resources() {
@@ -10,7 +10,7 @@ import "../style/resources.css";
                         <div class="dropdown">
                             <button class="link">Topics</button>
                             <div class="dropdown-menu">
-                                Dropdown Content
+                                Topics
                             </div>
                         </div>
                     </div>
