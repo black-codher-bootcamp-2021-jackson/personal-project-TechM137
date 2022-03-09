@@ -22,7 +22,7 @@ const RenderQuestions = (user) => {
 
     return (
           <>
-           <div>Welcome To Tech Wealth Assessment</div>
+           {/* <div>Welcome To Tech Wealth Assessment</div> */}
             {questions.map((question)=>{
                  return (question.question)
              })}

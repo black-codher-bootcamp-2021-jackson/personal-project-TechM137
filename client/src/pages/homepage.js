@@ -1,8 +1,9 @@
     import React from "react";
+    import {Link} from "react-router-dom";
     
-    function handleClick() {
-        window.location.href = "/questions";  
-    }
+    // function handleClick() {
+    //     window.location.href = "/questions";  
+    // }
 
     // type FormValues = {
     //     Email = string;
@@ -43,9 +44,10 @@
             </input>
         </input>
     </form>   */}
-    <div>
+    <Link className="btn" to="/questions"> Assessment </Link>
+    {/* <div>
      <button onClick={handleClick} className="btn"> Risk Assessment </button>  
-     </div>
+     </div> */}
     </div>
     </body>
         ) 

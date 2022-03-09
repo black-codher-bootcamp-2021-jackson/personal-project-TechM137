@@ -68,20 +68,20 @@ h1 {
   padding: 5px;
 }
 
-.tagline {
+/* .tagline {
   position: center;
   text-align: center;
-}
+} */
 
 .btn:hover{
   background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
   animation: slidesbg 2vw infinite linear;
   letter-spacing: 15px;
-  /* display: inline block;  */
+  display: inline block;  
   /* width: 150px;
-  height: 150px;
-  top: 150px;
-  left: 150px; */
+  height: 150px; */
+  /* top: 150px;
+  left: 150px;  */
   /* transform: translate(-50%, 50%); */
   position: centre;
   
