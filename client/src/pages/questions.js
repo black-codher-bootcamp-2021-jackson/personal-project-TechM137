@@ -19,33 +19,49 @@ const RenderQuestions = (user) => {
     }
         getQuestions();
     }, []); 
+    function handleSubmit(event) {
+        event.preventDefault()
+        console.log('form submit')
+        console.log(event.target.elements)
+        const formAnswers=Array.from(event.target.elements).reduce((answers,element)=>{
+                if (element.type !='submit'){
+                    answers[element.name]=element.value
+                }
+            return answers
+        },{})
+
+        console.log(formAnswers)
+    };
+
 
     return (
-          <>
+          <form onSubmit={handleSubmit}>
            <div>Welcome To Tech Wealth Assessment</div>
             {questions?.map((question)=>{
-                 return (
-                 <div>
-                     {question.question}
-                     <select>
-                         <option>
-                             Select your option...
+                return (
+                 <div key={question.question}>
+                    {question.question}
+                     <select name={question.question}>
+                        <option value=''>
+                            Select your option...
                          </option>
-                         {question.answers.map((answer) =>{
-                             return (
-                                 <option>
-                                     {answer}
-                                 </option>
+                            {question.answers.map((answer) =>{
+                                return (
+                                <option key={answer}>
+                                    {answer}
+                                </option>
                             )
                         })}
-                     </select>
+                     </select>answers[element.name]=element.value
                 </div>
-                 )
+                )
              })}
-         </>
+            <input type='submit' value='Submit Answers'/>
+        </form>
     )
   }
     export default RenderQuestions;
+
 //     return ( <>
     
 //             {/* <h1> Tech Wealth Risk Assessment </h1> */}
